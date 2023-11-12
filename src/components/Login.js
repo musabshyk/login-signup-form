@@ -48,7 +48,7 @@ function Login({ setIsAuthenticated }) {
     } catch (error) {
       if (error.code === "auth/popup-closed-by-user") {
         alert("Google Sign-In popup closed. Please try again.");
-        navigate("/login"); // Redirect back to the login page
+        navigate("/login"); 
       } else if (error.code === "auth/cancelled-popup-request") {
         alert("Google Sign-In request cancelled. Please try again.");
       } else {

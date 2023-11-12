@@ -26,7 +26,7 @@ function App() {
       }
     });
 
-    // Cleanup the subscription on component unmount
+ 
     return () => unsubscribe();
   }, []);
 
