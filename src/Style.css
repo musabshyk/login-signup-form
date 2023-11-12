@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.auth-form-container, .login-form, .register-form, .forgot-password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+button {
+  border: none;
+  background-color: #007bff;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.link-btn {
+  background: none;
+  color: black !important;
+  text-decoration: underline;
+}
+
+.link-btn-back {
+  background: none;
+  color: white !important;
+  text-decoration: underline;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.form-check-label {
+  /* margin-left: 5px; */
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.error {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #ff3300;
+  text-align: center;
+}
